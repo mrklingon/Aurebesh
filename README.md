@@ -1,0 +1,3 @@
+# Aurebesh
+Experimenting with a figlet version of a StarWars font.
+aiming at making a circuitpython figlet reader.....
