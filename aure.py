@@ -1,3 +1,5 @@
+from prt import *
+import time
 
 aurebesh = [[
     "        ",
@@ -147,7 +149,7 @@ aurebesh = [[
     "\   |  ",
     " \  |  ",
     "  \ |  ",
-    "== \   	",
+    "== \    ",
     "       ",
       ],
 [
@@ -192,7 +194,7 @@ aurebesh = [[
        ],
 [
 
-    "\=      / ",
+    "\=     / ",
     " \\   /   ",
     "  \  /    ",
     "   \/     ",
@@ -210,7 +212,7 @@ aurebesh = [[
 
 
 
-def doAure(c):
+def doAure(c,delay,REPL):
     c = c.lower()
     for i in range(len(c)):
         l = c[i]
@@ -218,9 +220,11 @@ def doAure(c):
         if (x >=0 and x <=25):
             letter = aurebesh[x]
             for line in letter:
-                print(line)
-            print()
+                prt(line,REPL)
+            prt(" ",REPL)
+            time.sleep(delay)
         else:
-            print()
+            prt(" ",REPL)
+            time.sleep(delay)
         
                 
